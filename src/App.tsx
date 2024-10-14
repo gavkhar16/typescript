@@ -1,28 +1,28 @@
 import React from 'react';
 
-// Функция для отображения сообщений на странице
+
 const App: React.FC = () => {
-  // 1. Примитивные типы
-  const username: string = "Alice";
+ 
+  const username: string = "Inessa";
   const age: number = 25;
   const isAdmin: boolean = true;
 
-  // 2. Специальные примитивные типы
+  
   const notAssigned: null = null;
   const notDefined: undefined = undefined;
 
-  // 3. Массивы
+  
   const numbers: number[] = [1, 2, 3, 4, 5];
-  const names: Array<string> = ["Alice", "Bob", "Charlie"];
+  const names: Array<string> = ["Kendis", "Phineas", "and","Ferb"];
 
-  // 4. Кортежи (tuples)
-  const userTuple: [number, string] = [1, "Alice"];
+ 
+  const userTuple: [number, string] = [1, "Kendis"];
 
-  // 5. Специальный тип any
-  let flexible: any = "Hello";
-  flexible = 42;
+ 
+  let flexible: any = "Alex";
+  flexible = 30;
 
-  // 6. Специальный тип unknown
+  
   const someValue: unknown = "Could be anything";
 
   // 7. Специальный тип void
