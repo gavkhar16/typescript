@@ -1,0 +1,85 @@
+/* TypeScript.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fce4ec; /* Светлый фон с легким розовым оттенком */
+  margin: 0;
+  padding: 50px; /* Увеличенные отступы для создания пространства */
+}
+
+.typescript-container {
+  background: #ff6f91; /* Яркий розовый фон для контейнера */
+  border-radius: 30px; /* Закругленные углы */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Тень для объема */
+  padding: 30px; /* Внутренние отступы */
+  max-width: 400px; /* Максимальная ширина контейнера */
+  margin: auto; /* Центрирование контейнера */
+  text-align: center; /* Выравнивание текста по центру */
+  position: relative; /* Для позиционирования псевдоэлементов */
+}
+
+.typescript-container::before {
+  content: ""; /* Псевдоэлемент для создания оригинального бордера */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 5px dashed #fff; /* Дашед бордер белого цвета */
+  border-radius: 15px; /* Закругление углов бордера */
+  pointer-events: none; /* Чтобы не мешать взаимодействию с элементами формы */
+  z-index: 0; /* Установить за контейнером */
+}
+
+h2 {
+  color: #ffffff; /* Белый цвет для заголовка */
+  margin-bottom: 20px; /* Отступ снизу для заголовка */
+  position: relative; /* Позиционирование заголовка */
+  z-index: 1; /* Установка над бордером */
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение элементов формы */
+  gap: 15px; /* Отступы между элементами формы */
+  position: relative; /* Для того, чтобы элементы формы были над бордером */
+  z-index: 1; /* Установка над бордером */
+}
+
+label {
+  font-weight: bold; /* Жирный шрифт для меток */
+  color: #ffffff; /* Белый цвет меток */
+  text-align: left; /* Выравнивание меток влево */
+}
+
+input {
+  padding: 10px; /* Внутренние отступы для полей ввода */
+  border: none; /* Убираем рамку */
+  border-radius: 5px; /* Закругленные углы для полей ввода */
+  transition: background-color 0.3s; /* Плавный переход для фона */
+  outline: none; /* Убираем стандартный контур */
+}
+
+input::placeholder {
+  color: #ed7285; /* Светлый цвет плейсхолдера */
+}
+
+input:focus {
+  background-color: rgba(255, 255, 255, 0.8); /* Светлый фон при фокусе */
+}
+.container{
+  display: flex;
+flex-direction: column;
+max-width: 400px;
+margin: 0 auto;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+button{
+  color: #ff6f91;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  height: 30px;
+}
